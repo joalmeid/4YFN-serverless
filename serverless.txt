@@ -1,0 +1,59 @@
+4yfn-serverless
+
+Office
+http://portal.office.com/
+https://social.technet.microsoft.com/wiki/contents/articles/37830.office-365-how-to-set-up-a-developer-subscription.aspx
+
+joao.diogo.almeida@dxpt.onmicrosoft.com
+
+
+# Storage
+4fynstgsrvlss
+DefaultEndpointsProtocol=https;AccountName=4fynstgsrvlss;AccountKey=MJZf82TOcWVbK2eA5AA31WmOMAznS10TxS5fVH/amxWwiSTJHcxyIMvexy2tDPBzd0QehWyKqWpDjYvuDjlKXA==;EndpointSuffix=core.windows.net
+container "images", private
+container "export", private
+
+# AzureFunction
+4yfnfuncapp
+Consumption Plan
+(storage) 4yfnfuncappstorage
+
+4yfntollevents
+Consumption Plan
+(storage) 4yfntolleventsstorage
+
+	Javascript, SavePlateData 
+	# Event Subscription
+	SavePlateDataEvtSub
+	
+# Event Grid Topic 
+4yfnTollBoothTopic
+https://4yfntollboothtopic.westeurope-1.eventgrid.azure.net/api/events
+Pn+pjuR2u9hNeAU/FKC4xK2XDQ+KrErtlyxaoGLZFGU=
+
+# CosmosDB
+4yfndb
+sql
+(enable GEO redundancy)
+
+https://4yfndb.documents.azure.com:443/
+iGEXrDngN6HqhRRtSofWytJGg2I9vZLjixeY7aL4r9zo4UVoO6z3HA5mBo91QFvDSpxEs6ycjYJYEOPdkdWEYA==
+
+Collections
+DB ID: LicensePlates 
+COLLECTION ID: Processed 
+
+DB ID: LicensePlates 
+COLLECTION ID: NeedsManualReview
+ 
+# Computer Vision API
+4yfnTollvision
+66e6bb3b4fc24f73b5de967144bada9e
+https://westeurope.api.cognitive.microsoft.com/vision/v1.0/ocr
+
+# Application Insights
+4tfnMonitor
+1b6c3f35-6d16-4200-9cee-6c850daa3562
+
+
+
