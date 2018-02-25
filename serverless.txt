@@ -55,5 +55,11 @@ https://westeurope.api.cognitive.microsoft.com/vision/v1.0/ocr
 4tfnMonitor
 1b6c3f35-6d16-4200-9cee-6c850daa3562
 
+# Logic Application
+4yfnLogicApp
+
+Data Explorer
+
+https://developercommunity.visualstudio.com/content/problem/201457/unable-to-connect-to-github-due-to-tls-12-only-cha.html
 
 
